@@ -1,0 +1,160 @@
+Link para download do Git: https://git-scm.com/download/win
+O Git Bash é um terminal extendido para otimizar o uso do Git.
+Os 15 comandos no Git.
+
+1. Git config para inserir nome de usuário e e-mail
+O primeiro comando GIT a ser utilizado para configurar seu nome de usuário e e-mail no software. 
+Caso queira alterar as informações colocadas, basta executar o comando GIT config sem a opção "--global".
+
+git config --global user.name "John Doe"git config --global user.email johndoe@example.com
+
+2. Git init para iniciar um projeto
+Esse comando cria um repositório novo ou importa uma pasta existente, mas que ainda não possui 
+um controle de versões. Para executá-lo, vá ao diretório do projeto e digite:
+
+git init
+
+3. Git rm para remover arquivos
+O comando executa a ação de remover arquivos da plataforma, encerrando o monitoramento e associação 
+à área de seleção do repositório utilizado no projeto.
+
+git rm -f {arquivo}
+
+4. Git clone para copiar um repositório existente
+É possível clonar o código-fonte de um repositório criado por outros desenvolvedores a partir do 
+comando GIT clone. A ação pode ser executada com a opção abaixo:
+
+git clone
+
+5. Git branch para criar, listar ou deletar ramificações
+As ramificações (branches) de um projeto no Github, por exemplo, é o que possibilita o trabalho 
+simultâneo de codificação de vários desenvolvedores. A cada alteração no código, cria-se uma nova 
+ramificação.
+
+Para criar um novo branch, execute o comando:
+git branch
+
+Caso deseje ver as ramificações, digite:
+git branch --list
+
+E para excluir uma branch, existe o comando:
+git branch -d
+
+6. Git checkout para alternar entre as branches
+O comando Git checkout é o que permite sair de uma ramificação e acessar uma outra para realizar a 
+alteração planejada. Para criar e mudar de branch, utilize o atalho com o parâmetro -b.
+
+git checkout
+
+git checkout -b {nome-da-ramificação}
+
+7. Git status para saber o status dos arquivos
+Esse comando GIT auxilia na hora de entender mais sobre a ramificação em que você está. Ao executá-lo, 
+o dev saberá se a branch está atualizada em relação à master e o que foi alterado até então.
+
+git status
+
+8. Git diff para detalhar os dados de monitoramento
+O comando Git diff traz informações mais detalhadas sobre o arquivo do que o comando Git status. Com 
+ele, é possível visualizar com precisão as linhas adicionadas ou deletadas do código.
+
+git diff
+
+9. Git add para incluir no próximo commit
+Para garantir que as alterações feitas no arquivo sejam monitoradas e incluídas no próximo commit, 
+utilize o comando Git add para
+
+- adicionar um único arquivo:
+
+git add
+
+- adicionar todos os arquivos:
+
+git add -A
+
+10. Git push para empurrar os commits
+O comando envia commits do repositório local para o servidor remoto. 
+
+git push
+
+Se a branch for recém-criada, será necessário realizar o upload da ramificação executando:
+
+git push -u origin
+
+11. Git pull para puxar e aplicar as alterações
+Esse comando é uma combinação de outros dois comandos. Com o Git pull, é possível trazer as alterações 
+mais recentes do servidor remoto (git fetch) e aplicá-las no repositório local (git merge).
+
+git pull
+
+12. Git revert para desfazer alterações
+O comando Git revert é uma ação segura para excluir uma alteração feita no repositório (local ou remoto).  
+
+git revert 'número do hash'
+
+O número do hash pode ser conferido pelo comando git log?--?oneline.
+
+13. Git reset para desfazer modificações permanentes
+Além do Git revert, há também o comando de exclusão Git reset. Porém, esse último não pode ser desfeito 
+caso seja aplicado. Atenção na hora de executá-lo!
+
+git reset --hard HEAD~1
+
+14. Git commit para definir o ponto de verificação
+Sua função é armazenar e verificar o conteúdo atual do índice. Para executá-lo, digite:
+
+git commit -m "mensagem explicando a mudança no código"
+
+15. Git merge
+Encerrando a lista de comandos Git, há a ação executada para mesclar todas as ramificações no 
+repositório local após o seu desenvolvimento funcionar do jeito desejado.
+
+git merge
+
+
+___________________________________________________________________________________________________
+
+
+O que é GIT e GitHub?
+GIT é a ferramenta que vai auxiliar o desenvolvedor a ter um histórico do seu processo de escrita de 
+código. Por meio desse software, é possível visualizar as várias versões que o projeto já teve a partir 
+de comandos, entender o que foi modificado e até reverter as alterações realizadas quando necessário.
+
+Esse direcionamento de código-fonte garante o bom gerenciamento do projeto, dando controle total ao 
+usuário para fazer e desfazer alterações sem tornar o processo confuso.
+
+Vantagens do GIT
+Destaca-se entre os demais Sistema de Controle de Versão (ou Version Control System, VCS) por ter 
+uma arquitetura distribuída;
+Sua velocidade é alta, tornando o desenvolvimento mais ágil e prático de ser executado;
+Não é preciso ter conexão a internet ou repositório central;
+O GIT é extremamente seguro porque os códigos são criptografados e protegidos contra alterações 
+imprevistas ou maliciosas, além de manter rastreável todo o histórico de versões.
+Seguindo uma lógica semelhante a do GIT, o GitHub é uma plataforma que também permite ao usuário ter 
+o controle de todas as edições do código-fonte.
+
+O funcionamento do GitHub se destaca pelo armazenamento em nuvem, opção de copiar o código de outro 
+do repositório, fazer alterações e aceitar as mudanças sugeridas por outro desenvolvedor. Tudo isso 
+simultaneamente.
+
+Vantagens do GitHub
+Também oferece recursos para gestão e projetos, como definir responsáveis, permissões e moderação de 
+comentários;
+Os repositórios de código são públicos, ou seja, qualquer desenvolvedor pode participar e estudar o 
+projeto que está sendo executado;
+A nova ferramenta, "Hey, GitHub!", permite o desenvolvimento de softwares utilizando apenas a voz.
+Diferenças entre GIT e GitHub
+As três principais diferenças entre GIT e GitHub – software utilizado por milhões de usuários no 
+Brasil – estão nos seguintes aspectos:
+
+Por ser um VCS local, o GIT não consegue disponibilizar as ações de outros desenvolvedores em tempo 
+real. Portanto, o GIT é recomendado para trabalhos solo e o GitHub para projetos em equipe;
+O GIT é um programa de código aberto, não havendo restrições de uso. Já o GitHub é da Microsoft, 
+sendo sua propriedade desde 2018;
+O GitHub tem uma limitação no uso gratuito. Para liberar o acesso a todos os seus recursos, será 
+preciso escolher um dos pacotes pagos.
+Quando usar GIT e o GitHub?
+Para otimizar o seu processo de desenvolvimento, os dois programas são a pedida certa. É até possível 
+integrar o GIT na sua conta do GitHub para encontrar solução de erros mais rapidamente, manter a 
+equipe sempre informada do andamento do projeto e criar um bom networking por meio da criação de 
+portfólio.
